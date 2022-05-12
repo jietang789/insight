@@ -69,4 +69,5 @@ Kubernetes CNI (opens new window), Istio (opens new window), Linkerd, App Mesh, 
 基于 Flagger 和 Nginx-Ingress 实现金丝雀发布 2020 年 7 月 02 日
 https://xie.infoq.cn/article/37b8b74f5bdcffcd75ad1796e
 
-
+Flagger(应用自动发布)介绍和原理剖析 2022-03-09
+https://developer.aliyun.com/article/748639
