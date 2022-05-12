@@ -1,7 +1,6 @@
 介绍：
 Flagger是一种渐进式交付工具，可自动控制 Kubernetes 上应用程序的发布过程。通过指标监控和运行一致性测试，将流量逐渐切换到新版本，降低在生产环境中发布新软件版本导致的风险。
-
-
+可以使用 Flagger 和Flux为金丝雀部署构建全自动 GitOps 管道。
 
 github：
 https://github.com/fluxcd/flagger
