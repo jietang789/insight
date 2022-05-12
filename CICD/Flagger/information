@@ -9,16 +9,17 @@ https://github.com/fluxcd/flagger
 https://docs.flagger.app/
 
 标签：
-Go,shell，CNCF孵化项目，渐进式交付
+Go,shell，CNCF孵化项目，渐进式交付，crd
 
 特点：
 通过逐渐将流量转移到新版本，同时测量HTTP/gRPC请求成功率和延时等指标，降低在生产中引入新软件版本的风险。
 Flagger 使用 Service Mesh（App Mesh，Istio，Linkerd）或 Ingress Controller（Contour，Gloo，NGINX）来实现多种部署策略（金丝雀发布，A/B 测试，蓝绿发布）。对于发布分析，Flagger 可以查询 Prometheus、Datadog 或 CloudWatch，并使用 Slack、MS Teams、Discord 和 Rocket 来发出告警通知。
 使用自定义指标和网络书扩展您的应用程序分析，以运行验收测试、负载测试或任何其他自定义验证。
 
-工作原理：
-flaager 可以通过自定义canary资源用于自动化发布k8s 工作负载程序。
-当创建一个canary资源，会将流量切换到APP-primary deployment，对应APP-primary service，并将APP deployment数量设置为0，在进行升级时，金丝雀流量对应APP对应svc为APP-canary,在金丝雀流量验证完毕后会对APP-primary deployment进行升级
+工作原理
+flaager 可以通过自定义canary资源用于自动化发布k8s 工作负载程序
+
+当创建一个canary资源，会将流量切换到 $APP-primary deployment，对应 $APP-primary service，并将$APP deployment 数量设置为0，在进行升级时，金丝雀流量对应 $APP 对应svc为$APP-canary,在金丝雀流量验证完毕后会对$APP-primary deployment进行升级。
 
 解决的问题：
 进行金丝雀发布之后指标的监控，流量的调整以及出现问题后的及时回滚。
@@ -30,7 +31,7 @@ Flagger Install on EKS App Mesh
 Flagger Install on Alibaba ServiceMesh
 
 使用者：
-alibaba,
+alibaba,werf项目，helmwave项目，
 
 贡献者：133
 GitHub 星星：3.6k
@@ -52,6 +53,13 @@ Istio (opens new window), App Mesh (opens new window), Contour (opens new window
 Blue/Green (traffic switching and mirroring)
 
 Kubernetes CNI (opens new window), Istio (opens new window), Linkerd, App Mesh, OSM, Kuma, Contour, Gloo, NGINX, Skipper, Traefik
+
+整体架构：
+简单介绍下上图含义:
+• primary service: 服务稳定版本. 可以理解为已发布在线的服务
+• canary service: 即将发布的新版本服务.
+• Ingress: 服务网关.
+• Flagger: 会通过flagger spec(下面会介绍), 以ingress/service mesh的规范来调整primary和canary的流量策略.以此来达到A/B testing, blue/green, canary(金丝雀)发布效果. 在调整流量过程中, 根据prometheus采集的各项指标(RT,成功率等)来决策是否回滚发布或者继续调整流量比例。在此过程中,用户可以自定义是否人工干预,审核,收到通知等.
 
 大牛发言：
 
