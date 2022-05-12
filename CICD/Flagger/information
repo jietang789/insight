@@ -1,7 +1,6 @@
 介绍：
 Flagger是一种渐进式交付工具，可自动控制 Kubernetes 上应用程序的发布过程。通过指标监控和运行一致性测试，将流量逐渐切换到新版本，降低在生产环境中发布新软件版本导致的风险。
 
-Flagger 使用 Service Mesh（App Mesh，Istio，Linkerd）或 Ingress Controller（Contour，Gloo，NGINX）来实现多种部署策略（金丝雀发布，A/B 测试，蓝绿发布）。对于发布分析，Flagger 可以查询 Prometheus、Datadog 或 CloudWatch，并使用 Slack、MS Teams、Discord 和 Rocket 来发出告警通知。
 
 
 github：
@@ -14,7 +13,11 @@ https://docs.flagger.app/
 Go,shell，CNCF孵化项目，
 
 特点：
-工作原理
+通过逐渐将流量转移到新版本，同时测量HTTP/gRPC请求成功率和延时等指标，降低在生产中引入新软件版本的风险。
+Flagger 使用 Service Mesh（App Mesh，Istio，Linkerd）或 Ingress Controller（Contour，Gloo，NGINX）来实现多种部署策略（金丝雀发布，A/B 测试，蓝绿发布）。对于发布分析，Flagger 可以查询 Prometheus、Datadog 或 CloudWatch，并使用 Slack、MS Teams、Discord 和 Rocket 来发出告警通知。
+使用自定义指标和网络书扩展您的应用程序分析，以运行验收测试、负载测试或任何其他自定义验证。
+
+工作原理：
 flaager 可以通过自定义canary资源用于自动化发布k8s 工作负载程序。
 当创建一个canary资源，会将流量切换到APP-primary deployment，对应APP-primary service，并将APP deployment数量设置为0，在进行升级时，金丝雀流量对应APP对应svc为APP-canary,在金丝雀流量验证完毕后会对APP-primary deployment进行升级
 
@@ -37,6 +40,19 @@ GitHub 星星：3.6k
 
 核心组件：
 
+支持：
+Flagger can run automated application analysis, testing, promotion and rollback for the following deployment strategies:
+
+Canary (progressive traffic shifting)
+
+Istio (opens new window), Linkerd (opens new window), App Mesh (opens new window), Open Service Mesh (opens new window), Kuma Service Mesh(opens new window)
+Contour (opens new window), Gloo (opens new window), NGINX (opens new window), Skipper (opens new window), Traefik(opens new window)
+A/B Testing (HTTP headers and cookies traffic routing)
+
+Istio (opens new window), App Mesh (opens new window), Contour (opens new window), NGINX(opens new window)
+Blue/Green (traffic switching and mirroring)
+
+Kubernetes CNI (opens new window), Istio (opens new window), Linkerd, App Mesh, OSM, Kuma, Contour, Gloo, NGINX, Skipper, Traefik
 
 大牛发言：
 
