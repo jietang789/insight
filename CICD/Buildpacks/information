@@ -33,7 +33,7 @@ Buildpacks 优点
 解决的问题：
 Cloud Native Buildpacks流程分为四个步骤，每个步骤都有各自的重要目标，最终产出就是 OCI 镜像。CNB 让开发和运维人员能够把创建各种软件的过程中所需的构建、补丁和重新打包的工作自动化成适合机器执行的重复任务。如果 Buildpacks 能够完成容器的构建和管理工作，还需要人工完成么？
 
-使用者：
+集成：
 Azure
 CircleCI
 GitLab
@@ -42,12 +42,13 @@ Heroku
 Spring Boot
 Tekton
 
-kpack、Salesforce Evergreen和谷歌Cloud Run。
+使用者：
+kpac0k、Salesforce Evergreen和谷歌Cloud Run。
 
 贡献者：
-GitHub 星星：
+GitHub 星星：1.6k
 
-最新版本：
+最新版本：pack v0.26.0  2022.5
 
 核心组件：
 pack，CLI 为最终用户提供构建和实用功能。
