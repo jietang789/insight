@@ -10,7 +10,7 @@ https://github.com/fluxcd/flagger
 https://docs.flagger.app/
 
 标签：
-Go,shell，CNCF孵化项目，
+Go,shell，CNCF孵化项目，渐进式交付
 
 特点：
 通过逐渐将流量转移到新版本，同时测量HTTP/gRPC请求成功率和延时等指标，降低在生产中引入新软件版本的风险。
