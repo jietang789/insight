@@ -1,0 +1,49 @@
+介绍：
+Flagger是一种渐进式交付工具，可自动控制 Kubernetes 上应用程序的发布过程。通过指标监控和运行一致性测试，将流量逐渐切换到新版本，降低在生产环境中发布新软件版本导致的风险。
+
+Flagger 使用 Service Mesh（App Mesh，Istio，Linkerd）或 Ingress Controller（Contour，Gloo，NGINX）来实现多种部署策略（金丝雀发布，A/B 测试，蓝绿发布）。对于发布分析，Flagger 可以查询 Prometheus、Datadog 或 CloudWatch，并使用 Slack、MS Teams、Discord 和 Rocket 来发出告警通知。
+
+
+github：
+https://github.com/fluxcd/flagger
+
+官网：
+https://docs.flagger.app/
+
+标签：
+Go,shell，CNCF孵化项目，
+
+特点：
+工作原理
+flaager 可以通过自定义canary资源用于自动化发布k8s 工作负载程序。
+当创建一个canary资源，会将流量切换到APP-primary deployment，对应APP-primary service，并将APP deployment数量设置为0，在进行升级时，金丝雀流量对应APP对应svc为APP-canary,在金丝雀流量验证完毕后会对APP-primary deployment进行升级
+
+解决的问题：
+进行金丝雀发布之后指标的监控，流量的调整以及出现问题后的及时回滚。
+
+集成：
+Flagger Install on Kubernetes
+Flagger Install on GKE Istio
+Flagger Install on EKS App Mesh
+Flagger Install on Alibaba ServiceMesh
+
+使用者：
+alibaba,
+
+贡献者：133
+GitHub 星星：3.6k
+
+最新版本：v1.21.0 2022.5
+
+核心组件：
+
+
+大牛发言：
+
+历史：
+
+参考文件：
+基于 Flagger 和 Nginx-Ingress 实现金丝雀发布 2020 年 7 月 02 日
+https://xie.infoq.cn/article/37b8b74f5bdcffcd75ad1796e
+
+
