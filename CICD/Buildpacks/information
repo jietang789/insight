@@ -61,7 +61,7 @@ docs，主要网站和文档。
 Buildpacks 起源
 Buildpacks 项目最早是由 Heroku 在 2011 年发起, 被以 Cloud Foundry 为代表的 PaaS 平台广泛采用。Buildpacks 不足的是产出包是 Droplet 格式, 不能直接适配容器平台。
 
-在 2018 年 1 月, Pivotal 和 Heroku 发起了一个项目 Cloud Native Buildpacks(简称, CNB) , 并在同年十月份加入 CNCF 
+在 2018 年 1 月, Pivotal 和 Heroku 发起了一个项目 Cloud Native Buildpacks(简称, CNB) , 并在同年十月份加入 CNCF。 
 
 参考文件：
 云原生打包工具：Buildpacks  2021 年 7 月 06 日
