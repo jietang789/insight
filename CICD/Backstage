@@ -16,11 +16,13 @@ CNCF孵化项目，门户，开发体验
 解决的问题：
 软件栈正变得越来越大，越来越复杂——Backstage 的构建是为了解决 SaaS 扩展和云计算等问题，这些问题会让开发者的体验变得复杂。
 
-使用者：
+使用者：724
 Backstage 已有100 家公司使用[3]，包括美国航空、Expedia、HelloFresh、Netflix、Peloton、Roku、Splunk、Wayfair、Zalando 等。
 
-贡献者：500+
-GitHub 星星：15k+
+贡献者：671
+GitHub 星星：16.4k
+
+最新版本：v1.1.1 2022.4
 
 核心组件：
 Backstage 软件目录，用于管理你的所有软件（微服务、库、数据流水线、网站、ML 模型等）
