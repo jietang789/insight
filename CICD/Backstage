@@ -11,7 +11,7 @@ https://github.com/backstage/backstage#getting-started
 https://backstage.io/
 
 标签：
-CNCF孵化项目，门户，开发体验
+TypeScript，CNCF孵化项目，门户，开发体验
 
 解决的问题：
 软件栈正变得越来越大，越来越复杂——Backstage 的构建是为了解决 SaaS 扩展和云计算等问题，这些问题会让开发者的体验变得复杂。
