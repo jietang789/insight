@@ -1,5 +1,24 @@
 介绍：
 Kubernetes and OpenShift Backup Operator
+
+是一个通过Helm chart分发的 Kubernetes Operator ，与OpenShift和普通Kubernetes兼容。它允许集群操作员：
+备份所有标记为ReadWriteMany或带有特定标签的 PVC。
+
+执行单独的按需备份。
+
+安排定期执行备份。
+
+计划存档（例如 AWS Glacier），通常以较长的时间间隔执行。
+
+执行“应用程序感知”备份，包含任何能够写入stdout.
+
+检查备份存储库的完整性。
+
+从存储库中修剪旧备份。
+
+基于Restic，它可以将备份存储在任何与 S3 兼容的存储中，例如 Amazon S3 或Minio。
+
+
 k8up 是一个基于 Restic 的备份工具，可以一次性的或者周期性的把指定的 PVC 备份到 S3 协议的对象存储上去，备份内容还可以使用 Restic 恢复到 S3 或者 PVC 上。除了 PVC，后续还可以用命令的方式，例如 mysqldump，把数据库等内容备份出来。
 
 github：
