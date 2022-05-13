@@ -1,0 +1,84 @@
+介绍：
+Flux是一个GitOps Kubernetes操作器（Operator）。Flux是一个自动确保集群状态与git中的配置匹配的工具。它使用集群中的一个操作器来触发Kubernetes内部的部署，这意味着你不需要单独的CD工具。它监视所有相关的镜像存储库，检测新镜像，触发部署并根据部署更新所需的运行配置（以及可配置策略）。好处是：你不需要授予CI访问集群的权限，每个更改都是原子性（atomic）和事务性的（transactional），git有你的审计日志。每个事务要么失败，要么成功。你完全以代码为中心，不需要新的基础设施
+
+Flux
+React 本身只涉及UI层，若果搭建大型应用，必须搭配一个前端框架。也就是说，要至少学两样东西才能基本满足需要，react+前端框架。Facebook官方提供了flux框架
+　a)　　Flux是一种架构思想，专门解决软件的结构问题，它跟MVC架构是同一类东西，但是更加简洁清晰
+
+　　b)　　组成部分：
+
+　　　　View： 视图层
+
+　　　　Action（动作）：视图层发出的消息
+
+　　　　Dispatcher（派发器）：用来接收Actions、执行回调函数
+
+　　　　Store（数据层）：用来存放应用的状态，一旦发生变动，就提醒Views要更新页面
+　c)　　Flux的最大特点是数据的单向流动，
+
+　　　　1)    用户访问 View
+
+　　　　2)    View 发出用户的 Action
+
+　　　　3)    Dispatcher 收到 Action，要求 Store 进行相应的更新
+
+　　　　4)    Store 更新后，发出一个"change"事件
+
+　　　　5)    View 收到"change"事件后，更新页面
+
+ 　　　　
+
+　　d)　　View是使用了React创建的组件，也可以使用controller View模式。 controller view是一个React顶级组件，包含所有的state状态并通过props传递给子组件。controller view方便了测试和组件复用。
+
+　　　　　　Action 每个Action都是一个对象，包含一个actionType属性和一些其他其他和属性(用来传递数据)，Action中利用Dispatcher把具体的动作(actionType)派发到store
+
+　　　　　　Dispatcher Dispatcher的作用是将Action派发到store，即触发注册的回调函数。也可以将它看做一个路由器，负责View和store之间，简历正确的Action传递路线。Dispatcher只能有一个，而且是全局
+
+　　　　　　Store 保存整个应用的state状态类似于MVC中的Model
+
+　　e)　　Container 容器，将React类作用于将反应类转换为更新其相关存储更改时状态的容器。当store中的数据发生改变时，自动更新react中的store
+
+github：
+https://github.com/fluxcd/flux
+
+官网：
+https://fluxcd.io/
+
+标签：
+Go，shell，CNCF孵化项目，gitops
+
+特点：
+
+
+
+解决的问题：
+
+备注：
+flux v1目前处于维护模式，flux v2
+
+集成：
+
+
+使用者：
+mettle，tidepool，Azure，德国电信
+
+贡献者：275
+GitHub 星星：6.8k
+
+最新版本：Flux 1.25.1 2022.5
+
+核心组件：
+
+
+大牛发言：
+
+历史：
+ 
+
+参考文件：
+How DoD Uses K8s & Flux to Achieve Compliance & Deployment Consistency - M. Medellin & G. Tillman 2021.5.15
+https://www.youtube.com/watch?v=ewCnqDgewMg
+
+Flux 2018-12-04
+https://www.oschina.net/search?identification=1652323799382&scope=blog&q=Flux
+
