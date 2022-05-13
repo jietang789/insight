@@ -56,7 +56,7 @@ KubeVela 的内核以 CRD Controller的形式存在，它可以轻易的被 Kube
 
 
 使用者：
-招商银行
+招商银行,alibba，微软，google
 
 贡献者：149
 GitHub 星星：3.7k
