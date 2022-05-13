@@ -9,7 +9,7 @@ KubeVela 背后的 OAM 模型天然解决了应用构建过程中对复杂资源
 如图所示，对于平台管理员/运维人员而言，他们并不需要关心应用的代码，所以只需要准备一个 Git 配置仓库并部署 KubeVela 配置文件，后续对于应用及基础设施的配置变动，便可通过直接更新 Git 配置仓库来完成，使得每一次配置变更可追踪。
 
 github：
-
+https://github.com/kubevela/kubevela
 
 官网：
 https://kubevela.io/
