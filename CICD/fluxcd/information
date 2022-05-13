@@ -1,0 +1,31 @@
+Flux 项目在 Kubernetes 之上提供了一个完整的持续交付（CD）平台，支持生态系统中的标准实践和工具。该项目集成了 Kustomize、Helm、Kyverno、Prometheus、Minio 等。2019 年 8 月，Flux 进入 CNCF 沙箱阶段，定义了开放治理和安全报告流程，从 Weaveworks 内部项目变成了由多家公司的维护人员，数百名贡献者和定期发布的开源项目。
+
+此次 Flux 项目进入到 CNCF 孵化阶段，Flux 联合创始人 Michael Bridgen：“我们当初把 Flux 作为开源项目，是因为我们认为开源是开发软件的最佳环境。当然，我也一直被证明信任你的用户和贡献者是有好处的，虽然 Flux 仍然是一个不起眼的项目，但是围绕 Flux 及 GitOps 存在着一个忠实且不断发展的社区。Flux 被纳入 CNCF 孵化阶段也是对 Flux 软件本身及其社区的认可。”
+
+
+
+作为一个开源项目，Flux 已经走过了一段路程：2016 年，Flux 项目发布；2018 年，集成 HelmOperator；2019 年，支持 kustomize；2020 年是项目重新启动的一年，Flux 转变为 GitOps 系列项目，在这些项目中，简单而集中的控制器可以自然地组合起来；2021 年，Flagger 被集成到 Flux 项目中。
+
+
+
+Flux 项目主要由三个部分组成：
+
+
+
+GitOps Toolkit——组成 Flux 运行时的 API 和控制器。它可以用来扩展 Flux 和构建新的持续交付系统。
+
+Flagger ——一种渐进交付工具，它可以自动化运行在 Kubernetes 上的应用程序的发布过程（灰度发布，A/B 测试，蓝 / 绿镜像）。
+
+Flux v1 和 Helm Operator——Flux 项目的第一个迭代，目前处于维护模式，2021 年年底之前会被弃用。
+
+
+
+Flux v2 建立在 v1 的基础上，提供了全面的 GitOps 解决方案。除了 v1 的功能，Flux v2 支持将 git 存储库到本地或远程集群，自动更新，支持渐进交付。
+
+
+
+在进入 CNCF 孵化阶段之前，Flux 项目就得到了许多用户的认可，超过 80+ 企业在生产环境中使用了 Flux，其中包括星巴克、富达投资集团等。CNCF 最终用户社区在 CD 技术雷达的“Adopt”类别中推荐了 Flux，除了 Helm，Flux 是唯一推荐的 CD。
+
+
+
+Flux 进入到孵化阶段，在一定程度上也意味着会有更多 GitOps 的其它程序出现和成熟。CNCF 首席技术官 Chris Aniszczyk 表示：“ GitOps 的核心思想是将应用系统的声明性基础架构和应用程序存放在的 Git 的版本控制库中，从而改善了开发人员使用 Kubernetes 交付应用程序的经验。以后，大规模的云原生软件自然会跟随 Flux 之类的 GitOps 工具的采用。”
