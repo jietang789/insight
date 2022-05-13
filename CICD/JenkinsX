@@ -1,1 +1,14 @@
 
+Jenkins X: Kubernetes 上的 Jenkins
+
+Jenkins X 是一个高度集成化的 CI/CD 平台，基于 Jenkins 和 Kubernetes 实现，旨在解决微服务体系架构下的云原生应用的持续交付的问题，简化整个云原生应用的开发、运行和部署过程。
+
+你猜的没错，Jenkins X 只能在 Kubernetes 集群上运行
+
+Jenkins X 的搭建过程非常简单，官方网站上已经提供了很好的文档。由于我们已经在使用 Google Kubernetes Engine（GKE），因此 jx 命令行工具可以自行创建所有的内容，包括 Kubernetes 集群。在几分钟内就可以获得一个完整的可运行系统真的让人印象深刻。
+
+Jenkins X 提供了很多快速入门和模板，不过我们想重用现有代码库中的 Jenkins 管道。所以，我们决定另辟蹊径，并对我们的声明性管道进行重构，让它们与 Jenkins X 兼容。
+
+实际上，重构工作并不是只针对 Jenkins X，而是为了能够使用Kubernetes插件在 Kubernetes 上运行 Jenkins。
+
+如果你习惯使用“经典”的 Jenkins，并在裸机或虚拟机上运行静态从节点，那么这里的主要变化是每个构建都将在自己的短存活期自定义 pod 上执行。你可以指定管道的每个步骤应该在哪个容器中执行。插件的源代码中提供了一些管道示例。
