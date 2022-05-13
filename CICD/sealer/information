@@ -1,0 +1,51 @@
+介绍：
+sealer[ˈsiːlər]是一款分布式应用打包交付运行的解决方案，通过把分布式应用及其数据库中间件等依赖一起打包以解决应用整个集群整体交付问题。 sealer构建出来的产物我们称之为"集群镜像", 集群镜像里内嵌了一个kubernetes, 解决了分布式应用的交付一致性问题。 集群镜像可以push到registry中共享给其他用户使用，也可以在官方仓库中找到非常通用的分布式软件直接使用。
+
+Docker可以把一个操作系统的rootfs+应用 build成一个容器镜像，sealer把kubernetes看成操作系统，在这个更高的抽象纬度上做出来的镜像就是集群镜像。 实现整个集群的Build Share Run !!!
+sealer 项目诞生于阿里云智能，旨在解决分布式软件的打包、分发与运行的标准化问题。
+
+github：
+https://github.com/sealerio/sealer
+
+官网：
+https://sealer.cool/  (打不开)
+链接为cncf提供
+https://www.cncf.io/projects/sealer/
+
+标签：
+Go，CNCF Sandbox，isv,docker
+
+特点：
+使用场景&特性
+ 极其简单的方式在生产环境中或者离线环境中安装kubernetes、以及kubernetes生态中其它软件
+ 通过Kubefile可以非常简单的自定义kubernetes集群镜像对集群和应用进行打包，并可以提交到仓库中进行分享
+ 强大的生命周期管理能力，以难以想象的简单的方式去做如集群升级，集群备份恢复，节点扩缩等操作
+ 速度极快3min以内完成集群安装
+ 支持ARM x86, v1.20以上版本支持containerd，几乎兼容所有支持systemd的linux操作系统
+ 不依赖ansible haproxy keepalived, 高可用通过ipvs实现，占用资源少，稳定可靠
+ 官方仓库中有非常多的生态软件镜像可以直接使用，包含所有依赖，一键安装
+ 自动对接公有云基础设施
+ 强大的配置管理能力，非常方便灵活的调整kubeadm安装参数，或者集群镜像内部的业务组件参数
+ 强大的插件能力，支持在安装的各各阶段自定义自己的操作，如修改主机名与时间同步等操作，支持out of tree插件开发
+
+解决的问题：
+
+集成：
+
+使用者：
+
+贡献者： 53
+
+GitHub 星星：1.2k
+最新版本：sealer 0.8.5 2022.4
+
+核心组件：
+
+大牛发言：
+
+历史：
+2022 年 4 月 26 日，云原生计算基金会（CNCF） TOC 例会投票，一致通过 sealer 开源项目成为 CNCF 官方沙箱项目。sealer 项目诞生于阿里云智能，旨在解决分布式软件的打包、分发与运行的标准化问题。项目发展初期，也就是去年 5 月，阿里云的工程师即坚定选择了开源之路。一年时间走来，sealer 在独立软件供应商（ISV）市场，得到了广大用户的青睐。也正是其创新的思路，以及短时间内的增长较快的用户基数，使 sealer 得以顺利申请并加入 CNCF 。5 月 16 日，这个新晋的 CNCF Sandbox 项目也将亮相 KubeCon EU 峰会，向全球云原生开发者分享 sealer 的技术架构、社区进展和 Roadmap 。0
+
+参考文件：
+sealer 成为 CNCF Sandbox 项目，旨在构建分布式应用交付新标准 2022 年 5 月 10 日
+https://xie.infoq.cn/article/86ea58f1905175a9c159bfc58
