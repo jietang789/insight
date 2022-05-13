@@ -29,3 +29,7 @@ Flux v2 建立在 v1 的基础上，提供了全面的 GitOps 解决方案。除
 
 
 Flux 进入到孵化阶段，在一定程度上也意味着会有更多 GitOps 的其它程序出现和成熟。CNCF 首席技术官 Chris Aniszczyk 表示：“ GitOps 的核心思想是将应用系统的声明性基础架构和应用程序存放在的 Git 的版本控制库中，从而改善了开发人员使用 Kubernetes 交付应用程序的经验。以后，大规模的云原生软件自然会跟随 Flux 之类的 GitOps 工具的采用。”
+
+参考资料：
+Flux 项目进入 CNCF 孵化阶段 2021.3.18
+https://www.infoq.cn/article/XAlTqVUsAgmk49zG21cJ
