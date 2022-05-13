@@ -1,0 +1,42 @@
+介绍：
+Kubernetes and OpenShift Backup Operator
+k8up 是一个基于 Restic 的备份工具，可以一次性的或者周期性的把指定的 PVC 备份到 S3 协议的对象存储上去，备份内容还可以使用 Restic 恢复到 S3 或者 PVC 上。除了 PVC，后续还可以用命令的方式，例如 mysqldump，把数据库等内容备份出来。
+
+github：
+https://github.com/k8up-io/k8up
+
+官网：
+https://k8up.io/k8up/2.1/index.html
+
+标签：
+Go，CNCF Sandbox，helm chart，Kubernetes Operator，Storage，CRD
+
+特点：
+
+
+解决的问题：
+第一次迁移到 Kubernetes 的客户向我们提出的一个常见问题几乎总是与备份有关：我们如何确保在发生事故时能够快速安全地恢复 Pod 和服务中的信息？
+这种情况非常普遍，以至于我们作为VSHN决定使用我们自己的 Kubernetes 操作员进行备份来解决它，我们称之为K8up。
+
+
+集成：
+
+
+使用者：
+
+
+贡献者：27
+GitHub 星星：295
+
+最新版本：v2.1.3 2022.4
+
+核心组件：
+
+
+大牛发言：
+
+历史：
+ 
+参考文件：
+把PVC备份到S3 2020-01-17
+https://cloud.tencent.com/developer/article/1575678
