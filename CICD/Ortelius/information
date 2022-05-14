@@ -43,6 +43,9 @@ GitHub 星星：228
 
 
 大牛发言：
+Ortelius 是一个开源微服务管理平台，可简化微服务和其他可重用组件的组织、共享和发布。Ortelius 与 CD 编排工具和 Helm、Ansible 和 Spinnaker 等外部部署引擎集成。 
+
+“公司正在努力应对微服务架构中的复杂性。我们启动了 Ortelius.io 项目来解决这些挑战。Ortelius 是一个用于组织、共享和版本控制微服务和“逻辑应用程序”的平台。很荣幸被 CDF 接纳为孵化项目。它是一个旨在简化集成到 CD 中的微服务架构的平台的合适之家，”DeployHub, Inc. 首席执行官兼 CDF 普通会员委员会代表 Tracy Ragan 说。
 
 历史：
  
@@ -50,3 +53,7 @@ GitHub 星星：228
 参考文件：
 微服务如何影响持续交付 2020-11-09
 https://cloud.tencent.com/developer/article/1744808
+
+CD 基金会欢迎开源微服务管理平台 Ortelius 作为新的孵化项目  2020 年 12 月 8 日
+https://cd.foundation/blog/2020/12/08/cd-foundation-welcomes-ortelius-open-source-microservices-management-platform-as-new-incubating-project/
+
