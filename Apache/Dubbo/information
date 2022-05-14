@@ -16,6 +16,14 @@ https://dubbo.apache.org/zh/index.html
 Java，Apache基金会，
 
 特点：
+Dubbo 提供了构建云原生微服务业务的一站式解决方案，可以使用 Dubbo 快速定义并发布微服务组件，同时基于 Dubbo 开箱即用的丰富特性及超强的扩展能力，构建运维整个微服务体系所需的各项服务治理能力，如 Tracing、Transaction 等，Dubbo 提供的基础能力包括：
+
+服务发现
+流式通信
+负载均衡
+流量治理
+
+
 Dubbo3 核心设计原则与特性
  
 我们定义 Dubbo3 是下一代的云原生服务框架，但 3.0 架构到底都包含哪些内容？ 先来看下 Dubbo 3.0 的一些核心设计原则： 
