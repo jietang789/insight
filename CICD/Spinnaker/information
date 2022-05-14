@@ -1,32 +1,39 @@
 介绍：
+Spinnaker 是一个开源的多云持续交付平台，可帮助您快速、自信地发布软件变更。
+社区2022.5的当前已经不活跃。
+Netflix 多年来在持续部署方面的实践经验。
 
 
 github：
-
+https://github.com/spinnaker/spinnaker
 
 官网：
-
+https://spinnaker.io/
 
 标签：
-
+Shell，Go，CDF孵化项目，CI，CD
 
 特点：
+作为持续部署的集大成者，Spinnaker势必会成为团队技术选型的重点考虑对象。
 
+在环境支持方面，Spinnaker支持云原生多云环境的持续部署，例如AWS、Azure、Google 等云提供商，以及国内三大云提供商——腾讯云（TKE 和 EKS）、阿里云（ACK 和 ASK）、华为云（CCE）等标准公有云均提供支持，此外虚拟机部署场景也正在被完善。
+
+Spinnaker 支持集成触发器来监听事件，从而实现自动触发和自动部署。此外，其内置持续部署的最佳实践（例如蓝绿部署和金丝雀部署），并提供了开箱即用的方法。
 
 
 解决的问题：
-
+企业陆续上云后带来的交付和部署的挑战。
 
 集成：
 
 
 使用者：
+Netflix，Google， Armory，OpsMx，Amazon
 
+贡献者：121
+GitHub 星星：8.4k
 
-贡献者：
-GitHub 星星：
-
-最新版本：
+最新版本：v0.83.0 2017.12
 
 核心组件：
 
@@ -34,6 +41,8 @@ GitHub 星星：
 大牛发言：
 
 历史：
- 
+Spinnaker社区最初是 Netflix 和 Google 之间的合作伙伴关系，渴望分享持续交付的好处。
 
 参考文件：
+Spinnaker：云原生多云环境持续部署的未来 2021-11-14
+https://baijiahao.baidu.com/s?id=1716363617080350325&wfr=spider&for=pc
