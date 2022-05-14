@@ -2,6 +2,13 @@ Screwdriver.cd
 
 介绍：
 
+使用：
+1.在终端中运行以下命令，以在本地启动一个 Screwdriver 集群。  
+    python <(curl -L https://git.io/sd-in-a-box)   
+该命令将运行一个脚本，该脚本将在本地创建一个 Docker Compose 文件，并使用生成的 JWT 和用户提供的 Oauth 客户端 ID 和密码以 Oauth 凭据完成。如果选择 yes，则 Docker 随后将拉取 Screwdriver API，UI 和日志存储镜像，以在本地调出整个 Screwdriver 实例。写入数据库的所有数据都将存储在 data 目录中。
+2.打开 Screwdriver web 界面，登陆并创建一个pipeline，填写git仓地址(仓里包含一个screwdriver.yaml的文件)
+3.你可调整流水线里的job(串行，并行，远程触发，参数化构造)，也可以执行run。    
+
 github：
 github.com/screwdriver-cd/screwdriver
 
@@ -31,4 +38,6 @@ GitHub 星星：934
 
 历史：
 
-参考文件：
+参考文件：2020-03-03
+Screwdriver 开源持续交付平台体验之旅 
+https://cloud.tencent.com/developer/article/1593400
