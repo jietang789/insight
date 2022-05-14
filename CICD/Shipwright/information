@@ -1,0 +1,52 @@
+介绍：
+Shipwright 是一个可扩展的框架，用于在 Kubernetes 上构建容器镜像。
+声明并重用构建策略来构建容器镜像。
+Shipwright 支持 Kaniko、 Cloud Native Buildpacks、Buildah等流行工具！
+
+可靠、安全、高效地构建容器镜像是现代云原生交付流水线日益重要的功能。使用 Shipwright，开发人员可以通过定义一个不需要任何容器或容器工具知识的最小 YAML，获得一种构建容器镜像的简化方法。Shipwright 是基于 Tekton 构建的，Tekton 是一个 CDF 项目。
+
+github：
+https://github.com/shipwright-io/community
+
+官网：
+https://shipwright.io/#td-block-1
+
+标签：
+Go，CDF孵化项目，
+
+特点：
+ 
+
+
+解决的问题：
+
+
+集成：
+
+
+使用者：
+
+
+贡献者：36
+GitHub 星星：422
+
+最新版本：Shipwright Build release v0.9.0 2022.4
+
+核心组件：
+
+
+大牛发言：
+”红帽高级首席软件工程师和 Shipwright 贡献者 Jason Hall 说。“我们相信 Shipwright 将成为持续交付生态系统中的重要工具。Shipwright 试图做好一件事：构建容器镜像。这不是一把瑞士军刀，这是一把锤子。”
+Shipwright 基于多年来作为 Red Hat OpenShift 平台的一部分开发和操作 Red Hat OpenShift 构建的经验，IBM 云代码引擎团队也做出了贡献。Shipwright 支持 IBM 云代码引擎容器镜像构建。
+
+“Shipwright 专注于做一件非常好的事情：构建容器。开发人员需要良好的工具来构建云原生应用程序，Shipwright 是该工具集的出色补充。由于 Shipwright 与 Tekton 合作良好，Tekton 是 CDF 的创始项目之一，也是发展最快的项目之一，因此 Shipwright 加入 CDF 进行更密切的合作是很有意义的。
+
+历史：
+ 
+
+参考文件：
+OpenFunction：新一代开源函数计算平台 2021 年 9 月 22 日
+https://www.infoq.cn/article/aqZsasOwiFAYwvGMkU9O
+
+CDF欢迎Shipwright——Kubernetes容器镜像构建框架——作为新的孵化项目 2021-08-26
+https://cloud.tencent.com/developer/article/1868133
