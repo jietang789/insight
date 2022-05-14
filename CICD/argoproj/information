@@ -1,5 +1,16 @@
 介绍：
+面向K8s的工作流， Argo 项目介绍
+DAG (Directed acyclic graph，有向无环图)是一个典型计算机图论问题，可以用来模拟有相互依赖关系的数据处理任务，比如音视频转码，机器学习数据流，大数据分析等。
 
+Argo 最早是通过workflow 在社区闻名。Argo Workflow 的项目名称就是Argo(https://github.com/argoproj/argo)， 是Argo 组织最初的项目。Argo Workflow 专注于Kubernetes Native Workflow 设计，拥有声明式工作流机制，能够通过 CRD 的模式完全兼容Kubernetes 集群，每个任务通过Pod的形式运行，Workflow 提供DAG等依赖拓扑，并且能够通过Workflow Template CRD实现多个Workflow 之间的组合与拼接。
+Argo CD 是另一个最近比较知名的项目。 Argo CD主要面向Gitops流程，解决了通过Git一键部署到Kubernetes的需求，并且能够根据版本标识快速跟踪，回滚。Argo CD还提供了多集群部署功能，能够打通多个集群之间同一应用部署问题。
+Argo Event 提供基于事件依赖关系的声明式管理，以及基于各种事件源的Kubernetes资源触发器。 Argo Events的常见用法是触发Argo工作流并为使用Argo CD部署的长期服务生成事件。
+
+
+Argo Rollout 是为了解决多种部署形式而诞生的项目。Argo Rollout 能实现多种灰度发布方式，同时结合Ingress, Service Mesh 等方式完成流量管理与灰度测试。
+
+
+Argo 各个子项目既可以单独使用，也可以结合使用。一般而言，结合使用多个子项目能够发挥Argo更大的能力，并且实现更多的功能。
 
 github：
 
