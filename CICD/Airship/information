@@ -1,0 +1,53 @@
+介绍：
+Airship 是一组松散耦合但可互操作的开源工具，它们以声明方式自动执行云配置。对于希望将容器作为大规模基础设施交付的新单元的组织来说，Airship 是一种强大的交付机制。从原始裸机基础设施开始，Airship 管理数据中心基础设施的整个生命周期，以交付具有 Helm 部署工件的生产级 Kubernetes 集群。Airship 允许运营商通过描述 Airship 环境的声明性 YAML 文档来管理其基础设施部署和生命周期。
+
+
+
+github：
+https://github.com/airshipit
+
+官网：
+https://www.airshipit.org/
+
+标签：
+Go，shell，OpenInfra基金会
+
+特点：
+
+解决的问题：
+
+集成：
+
+使用者：
+AT&T
+
+贡献者： 33+60+28+60+58+65=304
+GitHub 星星：六个组件，共才234个，整个2022年核心组件才几行代码修改 
+46+44+42+40+36+26=234
+
+最新版本：
+今年4月正式发布了Airship 2.0最新版，该版本改进了文件管理功能，通过集成云原生工具优化了软件升级流程，运维人员可采用同一套工作流来管理运行在裸机及公有云上的工作负载。
+
+上述改进加快了部署进程，优化了控制面板，提升了安全性能，用户还可采用Airship来部署原生Kubernetes资源。Airship 2.0的声明式模型可保障跨站点运维及升级的可预测性、可重复性及灵活性。
+
+AT&T在实际生产中对Airship进行了大规模应用，其5G网络通过Airship进行部署与管理，在100%容器化的OpenStack私有云平台上运行，并借助Airship在数十个区域快速复制其5G基础设施，该架构还支持AT&T网络及VNF团队的分组核心演进，可灵活进行移动会话。
+
+核心组件：
+
+大牛发言：
+AT＆T去年11月表示，它计划在其基于OpenStack的AT＆T集成云（AIC）平台上更多地使用Kubernetes。AT＆T实验室云平台开发助理副总裁Ryan van Wyk表示，使用Kubernetes可以增加运行AIC平台的灵活性并降低成本。
+
+
+历史：
+AT&T (CNCF白金会员)一直大力参与开源技术开发，于 2018 年与 SKT 和英特尔组成Airship开源项目，为电信云创建开放基础设施软件。该项目使运营商能够运行虚拟网络功能和云原生网络功能（CNF）。Airship 现在是 Kubernetes 认证发行版，是 AT&T 5G 网络构建的基础。AT&T 还是Anuket开源社区的领导者，也是包括 Helm 和 Kubernetes 在内的 CNCF 项目的最终用户。
+
+参考文件：
+
+云原生计算基金会宣布 AT&T 成为白金会员 
+https://www.cncf.io/announcements/2021/02/02/cloud-native-computing-foundation-announces-att-as-platinum-member/
+
+聚焦开源基础设施的OpenInfra基金会，有了哪些新进展？ 2022-04-16
+https://cloud.tencent.com/developer/article/1983063
+
+华为与 OpenInfra 基金会十年共筑开源基础设施平台 2022 年 4 月 11 日
+https://xie.infoq.cn/article/ff3566a6765cfc6de8191e4e2
