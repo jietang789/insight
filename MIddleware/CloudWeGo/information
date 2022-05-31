@@ -1,0 +1,48 @@
+介绍：
+2. CloudWeGo 简介 
+CloudWeGo 是字节跳动基础架构团队开源出来的项目，它是一套可快速构建企业级云原生架构的中间件集合，它专注于微服务通信与治理，具备高性能、可扩展、高可靠的特点，且关注易用性。
+
+CloudWeGo 在第一阶段开源了四个项目：
+
+Kitex：高性能、强可扩展的 Golang RPC 框架；
+
+Netpoll：高性能、I/O 非阻塞、专注于 RPC 场景的网络框架；
+
+Thriftgo：Golang 实现的 Thrift 编译器，支持插件机制和语义检查；
+
+Netpoll-http2：基于 Netpoll 的 HTTP/2 实现。
+
+除了这几个主要项目外，CloudWeGo 紧随其后陆续开源了 Kitex-benchmark / Netpoll-benchmark / Thrift-gen-validator / Kitex-examples / Netpoll-examples 等项目。
+
+鉴于文章篇幅有限，下文将重点介绍 CloudWeGo 核心项目 Kitex。
+
+从演进历史来看，2014 年，字节跳动技术团队引入 Golang 解决长连接推送业务面临的高并发问题，两年后，内部技术团队基于 Golang 推出了一个名为 Kite 的框架，同时对开源项目 Gin 做了一层很薄的封装，推出了 Ginex。这两个框架极大推动了 Golang 在公司内部的应用。此后，围绕性能和可扩展性设计，字节跳动重构 Kite，并在次年 10 月完成并发布 Kitex，投入到内部应用中。据悉，截至 2021 年 9 月，线上有 3w+ 微服务使用 Kitex，大部分服务迁移新框架后可以收获 CPU 和延迟上的收益。
+
+
+github：
+
+官网：
+
+标签：
+
+特点：
+
+解决的问题：
+
+集成：
+
+使用者：
+
+贡献者： GitHub 星星：
+
+最新版本：
+
+核心组件：
+
+大牛发言：
+
+历史：
+
+参考文件：
+https://my.oschina.net/u/4843764/blog/5532121
+https://www.redhat.com/zh/topics/middleware/what-is-middleware
