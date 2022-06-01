@@ -1,0 +1,33 @@
+介绍：
+Zadig 是一款面向开发者设计的云原生持续交付(Continuous Delivery)产品，具备高可用 CI/CD 能力，提供云原生运行环境，支持开发者本地联调、微服务并行构建和部署、集成测试等。Zadig 不改变现有流程，无缝集成 Github/Gitlab、Jenkins、多家云厂商等，运维成本极低。我们的目标是通过云原生技术的运用和工程产品赋能，打造极致、高效、愉悦的开发者工作体验，让工程师成为企业创新的核心引擎。
+
+github：
+https://github.com/koderover/zadig
+https://github.com/koderover/zadig/blob/main/README-zh-CN.md
+
+官网：
+
+标签：
+CI/CD
+
+特点：
+
+解决的问题：
+
+集成：
+
+使用者：
+
+贡献者：26 
+GitHub 星星：1.4k
+
+最新版本：
+
+核心组件：
+
+大牛发言：
+
+历史：
+
+参考文件：
+https://my.oschina.net/koderover/blog/5532090
