@@ -1,0 +1,35 @@
+介绍：
+OpenTelemetry规范描述了所有OpenTelemetry实现的跨语言要求和期望。
+
+最新版本托管在 opentelemetry.io/docs/reference/specification
+降价来源符合规范
+
+github：
+https://github.com/open-telemetry
+
+官网：
+
+标签：
+可观测性，一种规范
+
+特点：
+
+解决的问题：
+日志的语言格式等不同，导致的信息孤岛问题
+
+集成：
+
+使用者：
+
+贡献者： GitHub 星星：
+
+最新版本：
+
+核心组件：
+
+大牛发言：
+
+历史：
+
+参考文件：
+https://www.infoq.cn/article/j1qeF8L1MoGzFWXCcmbF
